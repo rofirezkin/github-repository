@@ -1,4 +1,4 @@
-# 🚀 React Vite Application - Optimized, Scalable, and Fully Tested
+# 🚀 React Vite Application 
 
 Welcome to this **React Vite** project! This application is designed with **performance, scalability, and maintainability** in mind, making it an excellent foundation for modern web development.
 
