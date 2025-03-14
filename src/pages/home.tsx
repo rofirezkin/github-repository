@@ -55,7 +55,7 @@ export default function Home() {
   }, [repos, isLoadingRepos]);
 
   return (
-    <div className=" h-dvh w-full shadow-2xl md:w-md  max-w-md overflow-auto ">
+    <div className=" h-dvh w-full shadow-2xl md:w-md  max-w-md overflow-auto bg-white dark:bg-white ">
       <div className="top-0 sticky bg-white dark:bg-white dark:text-black p-4">
         <Input value={query} onChange={(e) => setQuery(e.target.value)} />
         <Button
