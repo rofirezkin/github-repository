@@ -17,6 +17,7 @@ export default function Home() {
     data: users,
     mutate: getSearchUser,
     isPending: isLoading,
+    isSuccess,
     isError,
     error,
   } = useGetSearchUser();
@@ -66,10 +67,11 @@ export default function Home() {
           }}
           title="Search"
         />
-        {users?.data?.items?.length === 0 ? (
-          <p className="mt-4 text-center">Data not found</p>
-        ) : (
+        {isSuccess && users.data.items.length > 0 && (
           <p className="mt-2">Showing user for "{query}"</p>
+        )}
+        {users?.data?.items?.length === 0 && (
+          <p className="mt-4 text-center">Data not found</p>
         )}
       </div>
 
