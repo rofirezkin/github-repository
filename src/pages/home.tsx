@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <div className=" h-dvh w-full shadow-2xl md:w-md  max-w-md overflow-auto ">
-      <div className="top-0 sticky bg-white p-4">
+      <div className="top-0 sticky bg-white dark:bg-white dark:text-black p-4">
         <Input value={query} onChange={(e) => setQuery(e.target.value)} />
         <Button
           isLoading={isLoading}
