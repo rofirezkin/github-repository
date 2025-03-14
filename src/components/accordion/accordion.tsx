@@ -15,9 +15,9 @@ export default function Accordion({
     <section className="my-2">
       <button
         onClick={onClick}
-        className="flex justify-between w-full py-3 items-center bg-gray-100"
+        className="flex justify-between w-full py-3 items-center bg-gray-100 dark:bg-gray-100"
       >
-        <div>{renderTitle}</div>
+        <div className="text-black dark:text-black">{renderTitle}</div>
 
         {isOpen ? (
           <svg

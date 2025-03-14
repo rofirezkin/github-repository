@@ -75,7 +75,7 @@ export default function Home() {
         )}
       </div>
 
-      <div className="px-4">
+      <div className="px-4 dark:bg-white">
         {isError && (
           <p className="text-red-500">
             {error?.response?.data?.message || "Internal Server Error"}

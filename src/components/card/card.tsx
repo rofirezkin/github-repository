@@ -6,10 +6,10 @@ type CardProps = {
 
 export default function Card({ title, description, count }: CardProps) {
   return (
-    <div className="bg-gray-300 my-3 p-2 flex justify-between items-start">
+    <div className="bg-gray-300 dark:bg-gray-300 my-3 p-2 flex justify-between items-start">
       <div>
-        <div className="font-bold">{title}</div>
-        <div>{description}</div>
+        <div className="font-bold text-black dark:text-black">{title}</div>
+        <div className="text-black dark:text-black">{description}</div>
       </div>
 
       <div className="flex gap-2 items-center ml-3.5">
